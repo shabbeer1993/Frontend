@@ -1,0 +1,150 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h3>Registration</h3>
+   
+  <form action="#">
+    <div class="container1">
+        <label for="fullname">Full Name :</label><br>
+        <input type="text" id="fullname"><br>
+        <label for="email">Email :</label><br>
+        <input type="email" ><br>
+        <label for="password">Password :</label><br>
+        <input type="password"><br>
+    </div>
+    <div class="container2">
+    <label for="username">User Name :</label><br>
+    <input type="text" id="username"><br>
+    
+    <label for="number">Phone Number :</label><br>
+    <input type="number"><br>
+    
+    <label for="cpassword">Confirm Password :</label><br>
+    <input type="password" ><br>
+    </div>
+
+
+    <div class="container3">
+        <p>Gender :</p>
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">other</label>
+
+    </div>
+
+    <div class="container4">
+        <button>register</button>
+    </div>
+
+
+    
+
+  </form>
+</div>
+
+
+    
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        form {
+            background-color: white;
+            width: 700px;
+            padding: 50px;
+            margin: 100px 200px;
+
+        }
+
+        .input_field {
+            width: 310px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .input_field input {
+            padding: 4px;
+            width: 250px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        .title{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .radio_filed{
+            width:150px;
+        }
+        button{
+            width: 80%;
+            background:linear-gradient(red,yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="title">
+            <h2>Registration</h2>
+
+        </div>
+        <div class="input_field">
+            <label for="">Full_Name:</label>
+            <input type="text" name="fName" placeholder="please enter name">
+        </div>
+        <div class="input_field">
+            <label for="">User_Name:</label>
+            <input type="text" name="uName" placeholder="please enter username">
+        </div>
+        <div class="input_field">
+            <label for="">Email:</label>
+            <input type="email" name="email" placeholder="please enter email">
+        </div>
+        <div class="input_field">
+            <label for="">Phone_Number:</label>
+            <input type="number" name="pNumber" placeholder="please enter number">
+        </div>
+        <div class="input_field">
+            <label for="">Password:</label>
+            <input type="password" name="password" placeholder="please enter password">
+        </div>
+        <div class="input_field">
+            <label for="">Comfir_Password:</label>
+            <input type="password" name="cPassword" placeholder="please enter password again">
+        </div>
+        <div class="input_field">Gender</div>
+        <div calss="radio_field">
+            <input type="radio" name="gender">Male
+        
+            <input type="radio" name="gender">FeMale
+            <input type="radio" name="gender">Other
+            
+        </div>
+
+        <button>Register</button>
+
+    </form>
+</body>
+
+</html>
