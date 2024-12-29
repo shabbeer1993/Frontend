@@ -1,0 +1,165 @@
+<!-- Value-Attribute -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes</title>
+    <style>
+        body {
+            background: rgb(137, 137, 171);
+        }
+
+        form {
+            background: white;
+            width: 400px;
+            margin: 100px 350px;
+            padding: 100px;
+            background-image: url("images/pexels-photo-399161.webp");
+            border-radius: 15%;
+        }
+
+        .value_field {
+            width: 300px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 100px;
+        }
+
+        .value_field input {
+            width: 250px;
+            margin-bottom: 15px;
+
+        }
+
+        .value_field p {
+            background: rgb(255, 0, 34);
+        }
+
+        .button_field {
+
+            margin-top: 10px;
+            margin: 0 100px;
+
+        }
+
+        button {
+            margin-top: 15px;
+            background: blanchedalmond;
+        }
+
+        h1 {
+            margin: 0 50px;
+            margin-top: 5px;
+        }
+
+        .title_field {
+            margin-top: 2px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <form>
+        <div class="title_field">
+            <h1>Input Attribute :</h1>
+        </div>
+
+
+        <div class="value_field">
+            <label for="firstname"> First_Name:</label><br>
+            <input type="text" name="User_name" value="Shaik" readonly><br>
+            <P>(readonly-input field can't be modified)</P>
+
+        </div>
+        <div class="value_field">
+            <label for="lastname">Last_Name:</label><br>
+            <input type="text" name="lastname" value="shabbeer" disabled>
+            <p>(disabled-input field can't be unclicked)</p>
+
+        </div>
+
+        <div class="value_field">
+            <label for="Pin">Pin:</label><br>
+            <input type="text" id="pin" size="5" autofocus>
+            <p>(size-specifies the visible width of input field)</p>
+        </div>
+        <div class="value_field">
+            <label for="Pin">OTP:</label><br>
+            <input type="text" id="pin" maxlength="5">
+            <p>(maxlength-specifies the maximum number of characters allowed in iput field)</p>
+        </div>
+        <div class="value_field">
+            <label for="dob">DOB:</label><br>
+            <input type="date" id="dob" min="1993-06-30" max="2024-12-31">
+            <p>(min&max-specifies the min and max values for input field)</p>
+        </div>
+        <div class="value_field">
+            <label for="files">Select-Files:</label><br>
+            <input type="file" name="files" multiple>
+            <p>(multiple attribute specifies that the user is allowed to enter more than one value in an input field)
+            </p>
+        </div>
+        <div class="value_field">
+            <label for="country-code">Country Code:</label>
+            <input type="text" id="country-code" name="country-code" pattern="[A-Za-z]{3}"
+                title=" Three Leter Country code">
+            <p>(pattern attribute specifies a regular expression that the input field's value is checked against, when
+                the form is submitted)</p>
+
+        </div>
+        <div class="value_field">
+            <label for="phonenumber">Phone_Number:</label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="please enter phone number">
+            <p>(placeholder attribute specifies a short hint that describes the expected value of an input field)</p>
+        </div>
+
+        </div>
+        <div class="value_field">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+            <p>(required attribute specifies that an input field must be filled out before submitting the form)</p>
+        </div>
+        <div class="value_field">
+            <input type="image" src="images/Virat_Kohli_portrait.jpg" alt="Submit" width="50" height="100">
+            <p>(height and width attributes specify the height and width of an  element.)</p>
+        </div>
+
+        <div class="value_field">
+            <input list="gender">
+            <datalist id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </datalist>
+            <p>( list attribute refers to a datalist element that contains pre-defined options for an input element)</p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="button_field">
+            <button>Submit</button>
+            <button>Cancle</button>
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
